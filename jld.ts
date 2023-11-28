@@ -27,7 +27,7 @@ function mediaTypeType({ label, name, value }: ArgumentValue): string {
 const command = new Command()
   .name("jld")
   .description("JSON-LD CLI tools")
-  .version("0.1.1")
+  .version("0.1.2")
   .type("json", jsonType)
   .type("media_type", mediaTypeType)
   .arguments("[source:file]")
