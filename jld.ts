@@ -1,7 +1,10 @@
-import { ArgumentValue, Command } from "cliffy/command";
-import jsonld from "jsonld";
-import { toText } from "std/streams";
-import { defaultTheme, highlight } from "stx";
+import {
+  ArgumentValue,
+  Command,
+} from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts";
+import jsonld from "npm:jsonld";
+import { toText } from "https://deno.land/std@0.208.0/streams/mod.ts";
+import { defaultTheme, highlight } from "https://deno.land/x/stx@0.1.1/mod.ts";
 
 function jsonType({ label, name, value }: ArgumentValue): unknown {
   try {
@@ -24,7 +27,7 @@ function mediaTypeType({ label, name, value }: ArgumentValue): string {
 const command = new Command()
   .name("jld")
   .description("JSON-LD CLI tools")
-  .version("0.1.0")
+  .version("0.1.1")
   .type("json", jsonType)
   .type("media_type", mediaTypeType)
   .arguments("[source:file]")
