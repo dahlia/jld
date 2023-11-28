@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "cliffy/command": "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts",
+    "jsonld": "npm:jsonld",
+    "std/streams": "https://deno.land/std@0.208.0/streams/mod.ts",
+    "stx": "https://deno.land/x/stx@0.1.1/mod.ts"
+  }
+}
